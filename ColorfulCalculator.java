@@ -11,7 +11,7 @@ public class ColorfulCalculator implements ActionListener {
 
     JFrame jf;
     JLabel displayLabel;
-    JButton[] numberButtons = new JButton[10]; // Buttons for digits 0-9
+    JButton[] numberButtons = new JButton[10]; 
     JButton dotButton, equalButton, addButton, subButton, mulButton, divButton, clearButton;
     String operator;
     double num1, num2, result;
@@ -20,21 +20,21 @@ public class ColorfulCalculator implements ActionListener {
         jf = new JFrame("Colorful Calculator");
         jf.setLayout(null);
         jf.setSize(400, 600);
-        jf.getContentPane().setBackground(new Color(30, 30, 30));  // Dark background
+        jf.getContentPane().setBackground(new Color(30, 30, 30)); 
 
         // Font and colors for buttons
         Font buttonFont = new Font("Arial", Font.BOLD, 24);
-        Color buttonColor = new Color(60, 60, 60);  // Dark grey buttons
-        Color textColor = new Color(255, 255, 255); // White text
+        Color buttonColor = new Color(60, 60, 60);  
+        Color textColor = new Color(255, 255, 255); 
 
         // Display label
         displayLabel = new JLabel("");
         displayLabel.setBounds(30, 50, 340, 50);
-        displayLabel.setBackground(new Color(0, 0, 139));  // Dark Blue background for display
+        displayLabel.setBackground(new Color(0, 0, 139));  
         displayLabel.setOpaque(true);
         displayLabel.setHorizontalAlignment(SwingConstants.RIGHT);
         displayLabel.setForeground(Color.WHITE);
-        displayLabel.setFont(new Font("Arial", Font.BOLD, 32)); // Bigger font for display
+        displayLabel.setFont(new Font("Arial", Font.BOLD, 32)); 
         jf.add(displayLabel);
 
         // Number buttons
@@ -74,7 +74,7 @@ public class ColorfulCalculator implements ActionListener {
         equalButton = new JButton("=");
         equalButton.setBounds(230, 430, 80, 80);
         equalButton.setFont(buttonFont);
-        equalButton.setBackground(new Color(70, 130, 180));  // Light blue
+        equalButton.setBackground(new Color(70, 130, 180));  
         equalButton.setForeground(Color.WHITE);
         equalButton.addActionListener(this);
         jf.add(equalButton);
@@ -82,7 +82,7 @@ public class ColorfulCalculator implements ActionListener {
         addButton = new JButton("+");
         addButton.setBounds(330, 130, 80, 80);
         addButton.setFont(buttonFont);
-        addButton.setBackground(new Color(255, 165, 0)); // Orange
+        addButton.setBackground(new Color(255, 165, 0)); 
         addButton.setForeground(Color.WHITE);
         addButton.addActionListener(this);
         jf.add(addButton);
@@ -90,7 +90,7 @@ public class ColorfulCalculator implements ActionListener {
         subButton = new JButton("-");
         subButton.setBounds(330, 230, 80, 80);
         subButton.setFont(buttonFont);
-        subButton.setBackground(new Color(255, 69, 0)); // Red
+        subButton.setBackground(new Color(255, 69, 0)); 
         subButton.setForeground(Color.WHITE);
         subButton.addActionListener(this);
         jf.add(subButton);
@@ -98,7 +98,7 @@ public class ColorfulCalculator implements ActionListener {
         mulButton = new JButton("*");
         mulButton.setBounds(330, 330, 80, 80);
         mulButton.setFont(buttonFont);
-        mulButton.setBackground(new Color(0, 128, 0)); // Green
+        mulButton.setBackground(new Color(0, 128, 0));
         mulButton.setForeground(Color.WHITE);
         mulButton.addActionListener(this);
         jf.add(mulButton);
@@ -106,7 +106,7 @@ public class ColorfulCalculator implements ActionListener {
         divButton = new JButton("/");
         divButton.setBounds(330, 430, 80, 80);
         divButton.setFont(buttonFont);
-        divButton.setBackground(new Color(75, 0, 130)); // Indigo
+        divButton.setBackground(new Color(75, 0, 130)); 
         divButton.setForeground(Color.WHITE);
         divButton.addActionListener(this);
         jf.add(divButton);
